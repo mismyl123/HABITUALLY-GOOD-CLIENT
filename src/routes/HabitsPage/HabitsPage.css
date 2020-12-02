@@ -1,0 +1,44 @@
+.add-habits-link {
+    border: 3px solid #484848;
+    border-radius: 7px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .AddHabits a {
+    text-decoration: none;
+    margin: 0 auto;
+    color: #A41F26;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .AddHabits h3 {
+    font-weight: bold;
+  }
+  
+  .add-habits-icon {
+    margin-left: 10px;
+    font-size: 1.2em;
+  }
+  
+  @media screen and (min-width: 960px) {
+    .Habits {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .UserProfileBrief {
+      width: 460px;
+    }
+  
+    .AddHabits {
+      width: 460px;
+    }
+  
+    .HabitsList {
+      width: 460px;
+      order: -1;
+    }
+  }

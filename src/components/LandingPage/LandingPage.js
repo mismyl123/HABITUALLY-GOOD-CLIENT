@@ -1,22 +1,40 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
-import { useHistory, useLocation, useParams } from 'react-router-dom'
-import '../Welcome.css'
 
-const landing = () => {
+import React, { Component } from 'react'
+import { Section } from '../Utils/Utils'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEdit, faUserPlus, faGem } from '@fortawesome/free-solid-svg-icons'
+import './LandingPage.css'
+
+export default class LandingPage extends Component {
+  render() {
     return (
-        <div>
-            <div className="background" >
-                <span className="title" >Habitually Good</span>
-            </div>
-            <div className="about">
-                <h5 className="shade"><span>ABOUT THE APP</span></h5>
-                <p>I created this app because I am currently in an intense bootcamp, and time is precious, so let's make the most of it!  Also, during COVID, the world has changed: it only takes 3 weeks to create a new habit, so let's start new routines, quit bad routines, and do things that make us feel good!!  This app is chock full of suggestions to help better our lives!!</p>
-                <p>Click below and start your new habits!</p>
-              <Link to ="/landing"> <button>Add Habits</button></Link> 
-            </div>
+      <Section className="LandingPage">
+        <div className="LandingPage__add-wrapper">
+          <div className="LandingPage__add">
+            <FontAwesomeIcon icon={faEdit} size="7x" />
+          </div>
+          <h3 className="LandingPage__add-subtext">
+            Add tasks to your BackBurner and customize the rewards and XP you
+            can gain.
+          </h3>
         </div>
+        <div className="LandingPage__level-up-wrapper">
+          <div className="LandingPage__level-up">
+            <FontAwesomeIcon icon={faUserPlus} size="6x" />
+          </div>
+          <h3 className="LandingPage__level-up-subtext">
+            Check off completed tasks and gain XP and loot rewards.
+          </h3>
+        </div>
+        <div className="LandingPage__reward-wrapper">
+          <div className="LandingPage__reward">
+            <FontAwesomeIcon icon={faGem} size="7x" />
+          </div>
+          <h3 className="LandingPage__reward-subtext">
+            Collect rewards into your own Rewards Chest. Loot your rewards and treat yourself for being productive.
+          </h3>
+        </div>
+      </Section>
     )
+  }
 }
-
-export default landing

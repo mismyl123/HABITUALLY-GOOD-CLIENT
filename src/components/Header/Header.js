@@ -1,12 +1,68 @@
-import React from 'react'
-import '../Header.css'
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import TokenService from '../../services/token-service'
+import DashboardContext from '../../contexts/DashboardContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBullseye } from '@fortawesome/free-solid-svg-icons'
+import './Header.css'
 
-const Header = () => {
+export default class Header extends Component {
+  static contextType = DashboardContext
+
+  handleLogoutClick = () => {
+    TokenService.clearAuthToken()
+    this.context.clearUser()
+  }
+
+  renderLogoutLink() {
     return (
-        <div>
-           <h1>Create Your Film List</h1> 
-        </div>
+      <div className='Header__logged-in'>
+        <Link
+          to='/dash'>
+          Dash
+        </Link>
+        <Link
+          onClick={this.handleLogoutClick}
+          to='/'>
+          Logout
+        </Link>
+      </div>
     )
-}
+  }
 
-export default Header
+  renderLoginLink() {
+    return (
+      <div className='Header__not-logged-in'>
+        <Link
+          to='/register'>
+          Register
+        </Link>
+        <Link
+          to='/login'>
+          Login
+        </Link>
+      </div>
+    )
+  }
+
+  render() {
+    return <>
+        <nav className='Header'>
+          <h1>
+            <Link to='/'>
+              <FontAwesomeIcon className='red' icon={faBullseye} />
+              {' '}
+              BackBurner
+            </Link>
+          </h1>
+          <span className='Header__tagline--wide'>Let's get Productive!!</span>
+          {TokenService.hasAuthToken()
+            ? this.renderLogoutLink()
+            : this.renderLoginLink()
+          }
+        </nav>
+
+        <span className='Header__tagline--narrow'>Let's get Productive!</span>
+      </>
+  }
+}

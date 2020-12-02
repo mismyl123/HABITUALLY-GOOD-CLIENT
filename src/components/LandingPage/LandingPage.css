@@ -1,0 +1,54 @@
+
+.LandingPage {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  .LandingPage__add-wrapper,
+  .LandingPage__level-up-wrapper,
+  .LandingPage__reward-wrapper {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+  }
+  
+  .LandingPage__add,
+  .LandingPage__level-up,
+  .LandingPage__reward {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .LandingPage__add {
+    border: 5px solid #108AFB;
+    color: #108AFB;
+  }
+  
+  .LandingPage__level-up {
+    border: 5px solid #3bd474;
+    color: #3BD474;
+  }
+  
+  .LandingPage__reward {
+    border: 5px solid #FFD700;
+    color: #FFD700;
+  }
+  
+  @media screen and (min-width: 960px) {
+    .LandingPage {
+      flex-direction: row;
+    }
+  
+    .LandingPage__add-wrapper,
+    .LandingPage__level-up-wrapper,
+    .LandingPage__reward-wrapper {
+      max-width: 250px;
+    }
+  
+    .LandingPage__level-up {
+      margin-bottom: 35px;
+    }
+  }

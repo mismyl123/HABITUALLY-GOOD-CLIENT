@@ -1,44 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Lustria');
+
 .Header {
-    height: 40px;
-    display: flex;
-    align-items: normal;
-    justify-content: space-between;
-  }
-  
+  height: 40px;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+}
+
+.Header h1 {
+  font-family: "Lustria";
+  font-weight: 100;
+  margin: 0;
+  align-self: center;
+}
+
+.Header a {
+  color: white;
+  text-decoration: none;
+}
+
+.Header__tagline--wide {
+  opacity: 0.35;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.Header__tagline--narrow {
+  opacity: 0.35;
+  display: block;
+  text-align: center;
+  display: none;
+  margin-top: 10px;
+  align-self: center;
+}
+
+.Header__not-logged-in, .Header__logged-in {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Header__not-logged-in a:last-child {
+  /* background: rgb(255, 121, 121); */
+  background: #A41F26;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.Header__logged-in a:last-child {
+  /* border: 1px solid rgba(0, 0, 0, 0.25); */
+  border: 1px solid #A41F26;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 350px) {
   .Header h1 {
-    margin: 0;
+    font-size: 12pt;
   }
-  
-  .Header h1 a {
-    text-decoration: none;
+}
+
+@media screen and (min-width: 450px) {
+  .Header {
+    align-items: baseline;
   }
-  
-  .Header a {
-    color: #444;
+
+  .Header h1 {
+    font-size: 22pt;
   }
-  
-  .Header__not-logged-in {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .Header__not-logged-in .Hyph {
+}
+
+@media screen and (max-width: 550px) {
+  .Header__tagline--wide {
     display: none;
   }
-  
-  @media screen and (min-width: 450px) {
-    .Header {
-      align-items: baseline;
-    }
-    .Header h1 {
-      font-size: 22pt;
-    }
-  
-    .Header__not-logged-in {
-      flex-direction: row;
-    }
-  
-    .Header__not-logged-in .Hyph {
-      display: initial;
-    }
+
+  .Header__tagline--narrow {
+    display: inherit;
   }
+}

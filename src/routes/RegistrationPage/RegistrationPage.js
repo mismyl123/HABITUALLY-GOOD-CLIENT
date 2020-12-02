@@ -1,16 +1,16 @@
 
 import React, { Component } from 'react'
-import { Section } from '../../components/Utils/Utils'
-import RegistrationForm from '../../components/RegistrationForm/RegistrationForm'
+import { Section } from '../../components/Utils/Utils';
+import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
 
 export default class RegistrationPage extends Component {
   static defaultProps = {
     history: {
-      push: () => {},
-    },
+      push: () => {}
+    }
   }
 
-  handleRegistrationSuccess = user => {
+  handleRegisterSuccess = user => {
     const { history } = this.props
     history.push('/login')
   }
@@ -20,7 +20,7 @@ export default class RegistrationPage extends Component {
       <Section className='RegistrationPage'>
         <h2>Register</h2>
         <RegistrationForm
-          onRegistrationSuccess={this.handleRegistrationSuccess}
+          onRegisterSuccess={this.handleRegisterSuccess}
         />
       </Section>
     )

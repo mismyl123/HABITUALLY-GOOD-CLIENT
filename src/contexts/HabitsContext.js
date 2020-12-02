@@ -1,18 +1,77 @@
-import React, {useState, createContext} from "react"
+import React, { Component } from 'react'
 
-export const HabitsContext = createContext();
+const HabitsContext = React.createContext({
+  habitsList: [],
+  user: {},
+  rewardsChest: [],
+  error: null,
+  setHabitsList: () => {},
+  setUser: () => {},
+  updateUserXp: () => {},
+  clearUser: () => {},
+  setRewardsChest: () => {},
+  setError: () => {},
+  clearError: () => {},
+})
 
-export const HabitsContextProvider = (props) => {
-    const [habits, setHabits] = useState([])
-    const [selectedHabits, setSelectedHabits] = useState(null)
-   
-    const addHabits = (habits) =>{
-        setHabits([...habits, user])
+export default HabitsContext
+
+export class HabitsProvider extends Component {
+  state = {
+    habitsList: [],
+    user: {},
+    rewardsChest: [],
+    error: null
+  }
+
+  setHabitsList = habitsList => {
+    this.setState({ habitsList })
+  }
+
+  setUser = user => {
+    this.setState({ user })
+  }
+
+  updateUser = user => {
+    this.setState({ user })
+  }
+  
+  clearUser = () => {
+    this.setState({ user: {} })
+  }
+
+  setRewardsChest = rewardsChest => {
+    this.setState({ rewardsChest })
+  }
+  
+  setError = error => {
+    console.error(error)
+    this.setState({ error })
+  }
+
+  clearError = () => {
+    this.setState({ error: null })
+  }
+  
+  render() {
+    const value = {
+      habitsList: this.state.habitsList,
+      user: this.state.user,
+      rewardsChest: this.state.rewardsChest,
+      error: this.state.error,
+      setTaskList: this.setHabitsList,
+      setUser: this.setUser,
+      updateUserXp: this.updateUserXp,
+      clearUser: this.clearUser,
+      setRewardsChest: this.setRewardsChest,
+      setError: this.setError,
+      clearError: this.clearError,
     }
 
     return (
-        <HabitsContext.Provider value ={{habits, setHabits, addHabits, selectedHabits, setSelectedHabits}}>
-            {props.children}
-        </HabitsContext.Provider>
+      <HabitsContext.Provider value={value}>
+        {this.props.children}
+      </HabitsContext.Provider>
     )
+  }
 }
