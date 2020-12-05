@@ -1,6 +1,6 @@
-
 import React, { Component } from 'react'
-import LandingPage from '../../components/LandingPage/LandingPage';
+import LandingPageHero from '../../components/LandingPageHero/LandingPageHero';
+import LandingPageIntro from '../../components/LandingPageIntro/LandingPageIntro';
 import Footer from '../../components/Footer/Footer';
 
 export default class LandingPage extends Component {
@@ -8,7 +8,8 @@ export default class LandingPage extends Component {
     return (
       <>
         <main>
-          <LandingPage />
+          <LandingPageHero />
+          <LandingPageIntro />
         </main>
         <Footer />
       </>

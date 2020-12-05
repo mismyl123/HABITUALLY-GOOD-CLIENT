@@ -7,11 +7,13 @@
 
 # testing
 /coverage
+src/dummy-store.js
 
 # production
 /build
 
 # misc
+.vscode
 .DS_Store
 .env.local
 .env.development.local
@@ -22,4 +24,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-.vercel
+FutureFeatures.txt

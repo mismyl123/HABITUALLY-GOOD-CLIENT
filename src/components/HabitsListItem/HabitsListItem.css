@@ -1,0 +1,61 @@
+.HabitsListItem {
+    padding: 1% 5%;
+    /* border: 1px solid #108AFB; */
+    /* border-bottom: 1px solid #108afb; */
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .HabitsListItem__habits-stats {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .HabitsListItem__name {
+    font-size: 1.8em;
+    overflow: hidden;
+    margin-bottom: 7px;
+  }
+  
+  .HabitsListItem__reward,
+  .HabitsListItem__due_date,
+  .HabitsListItem__points {
+    color: #484848;
+    padding-left: 20px;
+    padding-bottom: 5px;
+  }
+  
+  .HabitsListItem__reward svg {
+    color: #800080;
+    margin-right: 15px;
+  }
+  
+  .HabitsListItem__due_date svg {
+    color: #800080;
+    margin-right: 12px;
+  }
+  
+  .HabitsListItem__points-label {
+    color: #800080;
+    margin-right: 6px;
+  }
+  
+  .HabitsListItem__controls {
+    display: flex;
+    font-size: 36px;
+    flex-direction: column;
+    margin-bottom: 5px;
+    justify-content: space-around;
+  }
+  
+  .HabitsListItem__complete {
+    color: #3BD474;
+    cursor: pointer;
+  }
+  
+  .HabitsListItem__remove {
+    color: #A41F26;
+    cursor: pointer;
+  }

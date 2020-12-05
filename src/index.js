@@ -1,15 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import { HabitsProvider } from './contexts/HabitsContext'
+import { DashboardProvider } from './contexts/DashboardContext'
 import App from './components/App/App'
 import './index.css'
 
 ReactDOM.render(
   <BrowserRouter>
-    <HabitsProvider>
+    <DashboardProvider>
       <App />
-    </HabitsProvider>
+    </DashboardProvider>
   </BrowserRouter>,
   document.getElementById('root')
 )

@@ -1,0 +1,54 @@
+
+.LandingPageIntro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  .LandingPageIntro__add-wrapper,
+  .LandingPageIntro__level-up-wrapper,
+  .LandingPageIntro__reward-wrapper {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+  }
+  
+  .LandingPageIntro__add,
+  .LandingPageIntro__level-up,
+  .LandingPageIntro__reward {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .LandingPageIntro__add {
+    border: 5px solid #32CD32;
+    color: #32CD32;
+  }
+  
+  .LandingPageIntro__level-up {
+    border: 5px solid #32CD32;
+    color: #32CD32;
+  }
+  
+  .LandingPageIntro__reward {
+    border: 5px solid #32CD32;
+    color: #32CD32;
+  }
+  
+  @media screen and (min-width: 960px) {
+    .LandingPageIntro {
+      flex-direction: row;
+    }
+  
+    .LandingPageIntro__add-wrapper,
+    .LandingPageIntro__level-up-wrapper,
+    .LandingPageIntro__reward-wrapper {
+      max-width: 250px;
+    }
+  
+    .LandingPageIntro__level-up {
+      margin-bottom: 35px;
+    }
+  }

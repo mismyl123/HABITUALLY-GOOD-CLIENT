@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 import TokenService from '../../services/token-service'
 import DashboardContext from '../../contexts/DashboardContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBullseye } from '@fortawesome/free-solid-svg-icons'
+import { faHSquare } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
+import { faGofore } from '@fortawesome/free-brands-svg-icons';
 
 export default class Header extends Component {
   static contextType = DashboardContext
@@ -50,19 +51,20 @@ export default class Header extends Component {
         <nav className='Header'>
           <h1>
             <Link to='/'>
-              <FontAwesomeIcon className='red' icon={faBullseye} />
+              <FontAwesomeIcon className='pink' icon={faHSquare} />
+              <FontAwesomeIcon className='pink' icon={faGofore} />
               {' '}
-              BackBurner
+              Habitually Good
             </Link>
           </h1>
-          <span className='Header__tagline--wide'>Let's get Productive!!</span>
+          <span className='Header__tagline--wide'>Increase Your Productivity</span>
           {TokenService.hasAuthToken()
             ? this.renderLogoutLink()
             : this.renderLoginLink()
           }
         </nav>
 
-        <span className='Header__tagline--narrow'>Let's get Productive!</span>
+        <span className='Header__tagline--narrow'>Increase Your Productivity</span>
       </>
   }
 }

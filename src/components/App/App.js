@@ -5,9 +5,9 @@ import Header from '../Header/Header'
 import './App.css'
 
 import LandingPage from '../../routes/LandingPage/LandingPage'
-import HabitsPage from '../../routes/HabitsPage/HabitsPage'
+import DashboardPage from '../../routes/DashboardPage/DashboardPage'
 import LoginPage from '../../routes/LoginPage/LoginPage';
-import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage'
+import RegisterPage from '../../routes/RegisterPage/RegisterPage'
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
 import PrivateRoute from '../Utils/PrivateRoute';
 import NotFoundPage from '../../routes/NotFoundPage/NotFoundPage';
@@ -32,9 +32,9 @@ export default class App extends Component {
           <Switch>
             <Route exact path={'/'} component={LandingPage} />
             <PublicOnlyRoute path={'/login'} component={LoginPage} />
-            <PublicOnlyRoute path={'/register'} component={RegistrationPage} />
-            <PrivateRoute path={'/dash'} component={HabitsPage} />
-            <PrivateRoute path={'/new-task'} component={AddHabitsPage} />
+            <PublicOnlyRoute path={'/register'} component={RegisterPage} />
+            <PrivateRoute path={'/dash'} component={DashboardPage} />
+            <PrivateRoute path={'/new-habits'} component={AddHabitsPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </main>

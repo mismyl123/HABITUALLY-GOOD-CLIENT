@@ -9,7 +9,7 @@ export default class HabitsList extends Component {
     if(habitsList.length === 0) {
       return (
         <div className='habitslist-no-habits'>
-          <h3>Whoooo So productive today!!</h3>
+          <h3>What to do today???:)</h3>
         </div>
       )
     }
@@ -17,7 +17,7 @@ export default class HabitsList extends Component {
     return habitsList.map(habits => 
       <HabitsListItem
         key={habits.id}
-        habit={habits}
+        habits={habits}
         onComplete={onComplete}
         onRemove={onRemove} 
       />

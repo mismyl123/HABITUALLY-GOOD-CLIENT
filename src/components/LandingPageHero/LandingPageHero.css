@@ -1,0 +1,30 @@
+.LandingPageHero {
+  border-top: 10px solid #32CD32;
+  border-bottom: 10px solid #32CD32;
+  margin: 5% 0 0 0;
+  padding: 0 20px 20px 20px;
+  display: block;
+  text-align: center;
+}
+
+.LandingPageHero__textblock {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.LandingPageHero__title {
+  margin: 25px 0;
+  font-size: 2.1em;
+}
+
+.LandingPageHero__subtitle {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.LandingPageHero__intro {
+  color: #aaa;
+  font-size: 0.9em;
+}
