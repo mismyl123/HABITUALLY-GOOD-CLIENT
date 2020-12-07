@@ -20,7 +20,7 @@ export default class LandingPageIntro extends Component {
         </div>
         <div className="LandingPageIntro__level-up-wrapper">
           <div className="LandingPageIntro__level-up">
-            <FontAwesomeIcon icon={faCheckSquare} size="5x" />
+            <FontAwesomeIcon icon={faCheckSquare} size="4x" />
           </div>
           <h3 className="LandingPageIntro__level-up-subtext">
             Complete your scheduled habits and gain points and rewards.
