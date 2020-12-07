@@ -29,6 +29,9 @@
     "test": "^0.6.0",
     "typeface-roboto": "0.0.54"
   },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
   "scripts": {
     "start": "react-scripts start",
     "prebuild": "CI=true react-scripts test --colors",
