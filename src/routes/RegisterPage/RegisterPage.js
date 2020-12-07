@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { Section } from '../../components/Utils/Utils';
 import RegisterForm from '../../components/RegisterForm/RegisterForm';
+import AuthContext from '../../contexts/AuthContext'
 
 export default class RegisterPage extends Component {
   static defaultProps = {
     history: {
-      push: () => {}
+      push: () => { }
     }
   }
 
@@ -16,12 +17,14 @@ export default class RegisterPage extends Component {
 
   render() {
     return (
-      <Section className='RegisterPage'>
-        <h2>Register</h2>
-        <RegisterForm
-          onRegisterSuccess={this.handleRegisterSuccess}
-        />
-      </Section>
-    )
+      <AuthContext.Consumer>
+        {(auth) => (
+          <Section className='RegisterPage'>
+            <h2>Register</h2>
+            <RegisterForm onRegisterSuccess={(token) => this.handleRegisterSuccess(auth, token)} />
+          </Section>
+        )}
+      </AuthContext.Consumer>
+    );
   }
 }
