@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import DashboardContext from '../../contexts/DashboardContext'
@@ -42,21 +41,19 @@ export default class DashboardPage extends Component {
 
   handleClickComplete = (habits_id, reward, points_gained) => {
     try {
-      DashboardApiService.updateUserXp(Number(points_gained)).then(
+      DashboardApiService.updateUserPoints(Number(points_gained)).then(
         this.context.setUser
       )
 
-      DashboardApiService.deleteTask(habits_id).then(() => {
+      DashboardApiService.deleteHabits(habits_id).then(() => {
         DashboardApiService.getUserHabits().then(this.context.setHabitsList)
       })
-      // .catch(this.context.setError)
 
       if(reward !== '') {
         DashboardApiService.postReward(reward).then(() => {
           DashboardApiService.getUserRewards().then(this.context.setRewardsChest)
         })
       }
-      // .catch(this.context.setError)
     } catch (error) {
       this.context.setError(error)
     }
