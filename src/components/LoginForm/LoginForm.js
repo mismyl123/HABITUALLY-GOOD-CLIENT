@@ -55,7 +55,7 @@ export default class LoginForm extends Component {
         <div className="password">
           <label htmlFor="LoginForm_password">
             Password
-          </label> 
+          </label>
           <Input 
             required 
             type="password" 

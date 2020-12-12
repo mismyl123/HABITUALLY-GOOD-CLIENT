@@ -6,7 +6,7 @@ export default class LoginPage extends Component {
   static defaultProps = {
     location: {},
     history: {
-      push: () => { }
+      push: () => {}
     }
   }
 
@@ -15,7 +15,7 @@ export default class LoginPage extends Component {
     const destination = `/dash`
     history.push(destination)
   }
-
+  
   render() {
     return (
       <Section className='LoginPage'>
