@@ -5,7 +5,6 @@ import { DashboardProvider } from './contexts/DashboardContext'
 import App from './components/App/App'
 import './index.css'
 
-
 ReactDOM.render(
   <BrowserRouter>
     <DashboardProvider>

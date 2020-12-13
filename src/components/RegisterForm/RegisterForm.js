@@ -34,11 +34,13 @@ export default class RegisterForm extends Component {
   }
 
   render() {
-    const { error } = this.state
+    const errorMessage = this.state.error ? (
+      <p className="error-message">{this.state.error}</p>
+    ) : (false);
 
     return (
       <form className="RegistrationForm" onSubmit={this.handleSubmit}>
-        <div role="alert">{error && <p className="red">{error}</p>}</div>
+        {errorMessage}
         <div className="first_name">
           <label htmlFor="RegistrationForm__first_name">
             First name <Required />
