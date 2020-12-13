@@ -17,7 +17,6 @@
     "dotenv": "^8.2.0",
     "enzyme": "^3.10.0",
     "enzyme-to-json": "^3.3.5",
-    "fsevents": "^2.2.1",
     "helmet": "^4.2.0",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^3.1.2",
@@ -36,7 +35,7 @@
     "web-vitals": "^0.2.4"
   },
   "optionalDependencies": {
-    "fsevents": "*"
+    "fsevents": "^2.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
