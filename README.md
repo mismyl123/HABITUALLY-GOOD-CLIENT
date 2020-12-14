@@ -2,6 +2,7 @@
 
 Live Demo:
 https://habitually-good-client.vercel.app/
+https://habitually-good-client-61dmv8ahv.vercel.app/
 
 Server Repo here: https://github.com/mismyl123/habitually-good-server
 
