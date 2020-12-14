@@ -43,6 +43,7 @@ Landing Page
 
 API Endpoints
 POST /signup
+![Alt text](/../<branch name>/path/to/REGISTER.png?raw=true "Optional Title")
 
 
 Create a new user
