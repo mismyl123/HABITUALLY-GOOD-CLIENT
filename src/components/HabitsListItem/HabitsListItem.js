@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import { NiceDate } from '../Utils/Utils'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

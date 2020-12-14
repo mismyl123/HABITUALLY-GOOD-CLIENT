@@ -51,7 +51,7 @@ export default class HabitsForm extends Component {
             aria-label="Enter Habit Name"
             name="habits_name"
             id="habits_name"
-            placeholder="New Habits..."
+            placeholder="Twenty Pushups a Day.."
           />
         </div>
 
@@ -75,7 +75,7 @@ export default class HabitsForm extends Component {
             aria-label="Specify a reward"
             name="reward"
             id="reward"
-            placeholder="Treat Yourself..."
+            placeholder="Eat Your Favorite Dessert..."
           />
         </div>
 

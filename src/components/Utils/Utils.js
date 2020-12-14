@@ -2,8 +2,12 @@ import React from 'react'
 import { format as formatDate } from 'date-fns'
 import './Utils.css'
 
-export function NiceDate({ date, format = 'Do MMMM YYYY' }) {
+export function NiceDate({ date, format='Do MMMM YYYY' }) {
   return formatDate(date, format)
+}
+
+export function Hyph() {
+  return <span className='Hyph'>{' - '}</span>
 }
 
 export function Button({ className, ...props }) {
@@ -11,18 +15,23 @@ export function Button({ className, ...props }) {
 }
 
 export function Textarea({ className, ...props }) {
-  return <textarea className={['Textarea', className].join(' ')} {...props} />
+  return (
+    <textarea className={['Textarea', className].join(' ')} {...props} />
+  )
 }
 
-export function Input({ className, ...props }) {
-  return <input className={['Input', className].join(' ')} {...props} />
-}
 
 export function Select({ className, ...props }) {
   return (
     <select className={['Select', className].join(' ')} {...props}>
       {props.children}
     </select>
+  )
+}
+
+export function Input({ className, ...props }) {
+  return (
+    <input className={['Input', className].join(' ')} {...props} />
   )
 }
 
@@ -35,9 +44,12 @@ export function Required({ className, ...props }) {
 }
 
 export function Section({ className, list, ...props }) {
-  const classes = ['Section', list && 'Section--list', 
-  className].filter(Boolean).join(' ')
-  return  (
-  <section className={classes} {...props} />
-  );
-};
+  const classes = [
+    'Section',
+    list && 'Section--list',
+    className,
+  ].filter(Boolean).join(' ')
+  return (
+    <section className={classes} {...props} />
+  )
+}

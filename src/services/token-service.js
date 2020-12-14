@@ -1,28 +1,27 @@
-
-import config from '../config';
+import config from '../config'
+import jwt from 'jsonwebtoken'
 
 const TokenService = {
   saveAuthToken(token) {
-    window.sessionStorage.setItem(config.TOKEN_KEY, token);
+    window.localStorage.setItem(config.TOKEN_KEY, token)
   },
   getAuthToken() {
-    return window.sessionStorage.getItem(config.TOKEN_KEY);
+    return window.localStorage.getItem(config.TOKEN_KEY)
   },
   clearAuthToken() {
-    window.sessionStorage.removeItem(config.TOKEN_KEY);
+    window.localStorage.removeItem(config.TOKEN_KEY)
   },
   hasAuthToken() {
-    return !!TokenService.getAuthToken();
+    return !!TokenService.getAuthToken()
   },
   makeBasicAuthToken(userName, password) {
-    return window.btoa(`${userName}:${password}`);
+    return window.btoa(`${userName}:${password}`)
   },
-  saveUserId(userId) {
-    return window.sessionStorage.setItem('user_id', userId);
-  },
-  getUserId(user_id) {
-    return window.sessionStorage.getItem('user_id', user_id);
+  getTokenPayload() {
+    if(this.hasAuthToken()) {
+      return jwt.decode(this.getAuthToken()) 
+    }
   }
+}
 
-};
-export default TokenService;
+export default TokenService

@@ -9,7 +9,7 @@ export default class UserProfileBrief extends Component {
 
     return (
       <div className="user__profile-brief">
-        <img className='user__points-gauge' src={ productivity } alt='productivity'/>
+        <img className='user__productivity' src={ productivity } alt='productivity'/>
         <div className='user__stats'>
           <h3 className="user__username">{user.username}</h3>
           <h3 className='user__points'>points: {user.points} / {user.points_to_next_level}</h3>

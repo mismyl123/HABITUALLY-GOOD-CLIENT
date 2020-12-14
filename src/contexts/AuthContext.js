@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import TokenService from '../services/token-service';
 
+
 const AuthContext = React.createContext({
     token: TokenService.getAuthToken(),
     setToken: () => {}

@@ -5,6 +5,7 @@ import { Section } from '../Utils/Utils'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons'
 import './RewardsChest.css'
+
 export default class RewardsChest extends Component {
   state ={
     isHidden: true

@@ -10,7 +10,7 @@
   .AddHabits a {
     text-decoration: none;
     margin: 0 auto;
-    color: blue;
+    color: #800080;
     font-weight: bold;
     cursor: pointer;
   }
