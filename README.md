@@ -42,6 +42,8 @@ Landing Page
 2. User clicks on Log In => pop up log in form
 3. User clicks on demo => redirect to demo dashboard
 
+<img width="978" alt="FRONTPAGE" src="https://user-images.githubusercontent.com/65927092/102105832-dd139380-3dfd-11eb-86fe-8cb3d6149d98.png">
+
 API Endpoints
 POST /signup
 https://raw.github.com/mismyl123/habitually-good-client/screenshots/REGISTER.png
