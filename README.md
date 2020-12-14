@@ -71,6 +71,7 @@ POST /habits
 
 Create new habits
 
+https://raw.github.com/mismyl123/habitually-good-client/screenshots/ADDNEWHABIT.png
 
 PUT /habits/:id and PUT /rewards/:id
 
