@@ -58,6 +58,7 @@ https://raw.github.com/mismyl123/habitually-good-client/screenshots/LOGIN.png
 Log in to the application
 GET /habits and GET /rewards
 https://raw.github.com/mismyl123/habitually-good-client/screenshots/FRONTPAGE.png
+<img width="856" alt="LOGIN" src="https://user-images.githubusercontent.com/65927092/102105698-b5243000-3dfd-11eb-9e16-b71b1f66df65.png">
 
 https://raw.github.com/mismyl123/habitually-good-client/screenshots/FRONTPAGE-BOTTOM.png
 
