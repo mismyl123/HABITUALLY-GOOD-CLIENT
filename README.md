@@ -43,14 +43,13 @@ Landing Page
 
 API Endpoints
 POST /signup
-![Alt text](/../<branch name>/path/to/REGISTER.png?raw=true "Optional Title")
-![Alt text](/../screenshots/path/to/REGISTER.png?raw=true "Optional Title")
+
 
 
 Create a new user
 
 POST /login
-![Alt Text](https://raw.github.com/{mismyl123}/{habitually-good-client}/{screenshots}/{LOGIN})
+
 
 Log in to the application
 GET /habits and GET /rewards
