@@ -46,6 +46,7 @@ API Endpoints
 POST /signup
 https://raw.github.com/mismyl123/habitually-good-client/screenshots/REGISTER.png
 
+<img width="856" alt="REGISTER" src="https://user-images.githubusercontent.com/65927092/102105391-5959a700-3dfd-11eb-8f0d-e94cdf6876a2.png">
 
 
 
