@@ -49,6 +49,7 @@ POST /signup
 Create a new user
 
 POST /login
+![Alt Text](https://raw.github.com/{mismyl123}/{habitually-good-client}/{screenshots}/{LOGIN})
 
 Log in to the application
 GET /habits and GET /rewards
