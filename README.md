@@ -51,7 +51,7 @@ https://raw.github.com/mismyl123/habitually-good-client/screenshots/REGISTER.png
 Create a new user
 
 POST /login
-
+https://raw.github.com/mismyl123/habitually-good-client/screenshots/LOGIN.png
 
 Log in to the application
 GET /habits and GET /rewards
