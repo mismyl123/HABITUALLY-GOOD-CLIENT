@@ -43,6 +43,8 @@ Landing Page
 
 API Endpoints
 POST /signup
+https://raw.github.com/mismyl123/habitually-good-client/screenshots/REGISTER.png
+
 
 
 
