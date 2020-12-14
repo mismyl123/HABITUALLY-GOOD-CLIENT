@@ -47,7 +47,6 @@ Landing Page
 <img width="843" alt="FRONTPAGE-BOTTOM" src="https://user-images.githubusercontent.com/65927092/102105979-08967e00-3dfe-11eb-97f5-21a8fc720c9c.png">
 API Endpoints
 POST /signup
-https://raw.github.com/mismyl123/habitually-good-client/screenshots/REGISTER.png
 
 <img width="856" alt="REGISTER" src="https://user-images.githubusercontent.com/65927092/102105391-5959a700-3dfd-11eb-8f0d-e94cdf6876a2.png">
 
@@ -56,14 +55,11 @@ https://raw.github.com/mismyl123/habitually-good-client/screenshots/REGISTER.png
 Create a new user
 
 POST /login
-https://raw.github.com/mismyl123/habitually-good-client/screenshots/LOGIN.png
 
 Log in to the application
 GET /habits and GET /rewards
-https://raw.github.com/mismyl123/habitually-good-client/screenshots/FRONTPAGE.png
 <img width="856" alt="LOGIN" src="https://user-images.githubusercontent.com/65927092/102105698-b5243000-3dfd-11eb-9e16-b71b1f66df65.png">
 
-https://raw.github.com/mismyl123/habitually-good-client/screenshots/FRONTPAGE-BOTTOM.png
 
 Display habits and rewards
 
@@ -77,7 +73,8 @@ POST /habits
 
 Create new habits
 
-https://raw.github.com/mismyl123/habitually-good-client/screenshots/ADDNEWHABIT.png
+<img width="850" alt="ADDNEWHABIT" src="https://user-images.githubusercontent.com/65927092/102106203-472c3880-3dfe-11eb-9111-61a8c0dfc782.png">
+
 
 PUT /habits/:id and PUT /rewards/:id
 
