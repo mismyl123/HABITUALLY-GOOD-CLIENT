@@ -6,7 +6,6 @@ https://habitually-good-client-61dmv8ahv.vercel.app/
 
 Server Repo here: https://github.com/mismyl123/habitually-good-server
 
-![purple](https://user-images.githubusercontent.com/65927092/103313824-3f1feb80-49ef-11eb-9480-301870826ebf.jpg)
 
 Habitually Good: Plan for you
 #Overview
